@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+         var phy = parseInt(prompt("Enter phy marks = "))
+        var che = parseInt(prompt("Enter che marks = "))
+        var bio = parseInt(prompt("Enter bio marks = "))
+        var math = parseInt(prompt("Enter math marks = "))
+        var com = parseInt(prompt("Enter computer marks = "))
+        sum = phy + che + bio + math + com
+        avr = sum*100/500
+        if(avr>=90)
+        {
+            document.write(`${avr}% = A grade`)
+        }
+        else if(avr>=80)
+        {
+            document.write(`${avr}% = B grade`)
+        }
+        else if(avr>=70)
+        {
+            document.write(`${avr}% = C grade`)
+        }
+        else if(avr>=60)
+        {
+            document.write(`${avr}% = D grade`)
+        }
+        else if(avr>=50)
+        {
+            document.write(`${avr}% = E grade`)
+        }
+        else if(avr>=40)
+        {
+            document.write(`${avr}% = F grade`)
+        }
+    </script>
+</body>
+</html>

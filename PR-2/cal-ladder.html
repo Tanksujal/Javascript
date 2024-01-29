@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal-ladder</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var oprater = prompt("Enter oprater = ")
+        var op1 = parseInt(prompt("enter 1 oprand = "))
+        var  op2 = parseInt(prompt("enter 2 oprand = "))
+        if(oprater == '+')
+        {
+            ans = op1 + op2
+            document.write(`${op1} + ${op2} = ${ans}`)
+        }
+        else if(oprater == '-')
+        {
+            ans = op1 - op2
+            document.write(`${op1} - ${op2} = ${ans}`)
+        }
+        else if(oprater == '*')
+        {
+            ans = op1 * op2
+            document.write(`${op1} * ${op2} = ${ans}`)
+        }
+        else if(oprater == '/')
+        {
+            ans = op1 / op2
+            document.write(`${op1} / ${op2} = ${ans}`)
+        }
+        else
+        {
+            document.write(`Invalid Choice`)
+        }
+    </script>
+</body>
+</html>
