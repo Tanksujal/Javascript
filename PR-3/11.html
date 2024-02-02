@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var n = parseInt(prompt("Enter number = "))
+        var i = 2
+        var flag =0
+        while(i<=n/2)
+        {
+            if(n % i == 0)
+            {
+                flag = 1
+                break
+            }
+            i++
+        }
+        if(flag==0)
+        {
+            document.write(`This ${n} number is a prime number`)
+        }
+        else
+        {
+            document.write(`This ${n} number is not prime number`)
+        }
+    </script>
+</body>
+</html>
