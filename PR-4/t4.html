@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function greater(a,b,c,d)
+        {
+            if(a>b&&a>c&&a>d)
+            {
+                document.write(`A IS MAX`)
+            }
+            else if(b>a&&b>c&&b>d)
+            {
+                document.write(`B IS MAX`)
+            }
+            else if(c>a&&c>b&&c>d)
+            {
+                document.write(`C IS MAX`)
+            }
+            else
+            {
+                document.write(`D IS MAX`)
+            }
+        }
+
+            var a = parseInt(prompt("Enter First Number :-- "))
+            var b = parseInt(prompt("Enter Second Number :-- "))
+            var c = parseInt(prompt("Enter Third Number :-- "))
+            var d = parseInt(prompt("Enter Fourth Number :-- "))
+            greater(a,b,c,d)
+    </script> 
+</body>
+</html>

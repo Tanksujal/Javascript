@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Take Nothing Return Nothing
+        // function greater()
+        // {
+        //     var a = parseInt(prompt("Enter  1 Number : -- "))
+        //     var b = parseInt(prompt("Enter 2 Number :-- "))
+        //     var c = parseInt(prompt("Enter 3 Number :-- "))
+        //     if(a>b)
+        //     {
+        //         if(a>c)
+        //         {
+        //             document.write(`A Is Max..`)
+        //         }
+        //         else
+        //         {
+        //             document.write(`C Is Max..`)
+        //         }
+        //     }
+        //     else
+        //     {
+        //         if(b>c)
+        //         {
+        //             document.write(`B Is Max..`)
+        //         }
+        //         else
+        //         {
+        //             document.write(`C Is Max..`)
+        //         }
+        //     }
+        // }
+        // greater()
+
+        //Take Something Return Nothing
+        // function greater(a,b,c)
+        // {
+           
+        //     if(a>b)
+        //     {
+        //         if(a>c)
+        //         {
+        //             document.write(`A Is Max..`)
+        //         }
+        //         else
+        //         {
+        //             document.write(`C Is Max..`)
+        //         }
+        //     }
+        //     else
+        //     {
+        //         if(b>c)
+        //         {
+        //             document.write(`B Is Max..`)
+        //         }
+        //         else
+        //         {
+        //             document.write(`C Is Max..`)
+        //         }
+        //     }
+        // }
+        // var a = parseInt(prompt("Enter  1 Number : -- "))
+        //     var b = parseInt(prompt("Enter 2 Number :-- "))
+        //     var c = parseInt(prompt("Enter 3 Number :-- "))
+        // greater(a,b,c)
+
+
+        // Take Nothing Return Something
+        // function greater()
+        // {
+        //     var a = parseInt(prompt("Enter  1 Number : -- "))
+        //     var b = parseInt(prompt("Enter 2 Number :-- "))
+        //     var c = parseInt(prompt("Enter 3 Number :-- "))
+        //     if(a>b)
+        //     {
+        //         if(a>c)
+        //         {
+        //             hello = 'A'
+        //             return a
+        //         }
+        //         else
+        //         {
+        //             hello = 'C'
+        //             return c
+        //         }
+        //     }
+        //     else
+        //     {
+        //         if(b>c)
+        //         {
+        //             hello = 'B'
+        //             return b
+        //         }
+        //         else
+        //         {
+        //             hello = 'C'
+        //             return c
+        //         }
+        //     }
+        // }
+            
+        // var ans = greater()
+        // document.write(`<h1>${ans} Is Max</h1>`)
+        // document.write(`<h1>${hello} Is Max</h1>`)
+
+        //Take Something Return Something
+        function greater(a,b,c)
+        {
+            
+            if(a>b)
+            {
+                if(a>c)
+                {
+                    hello = 'A'
+                    return a
+                }
+                else
+                {
+                    hello = 'C'
+                    return c
+                }
+            }
+            else
+            {
+                if(b>c)
+                {
+                    hello = 'B'
+                    return b
+                }
+                else
+                {
+                    hello = 'C'
+                    return c
+                }
+            }
+        }
+        var a = parseInt(prompt("Enter  1 Number : -- "))
+        var b = parseInt(prompt("Enter 2 Number :-- "))
+        var c = parseInt(prompt("Enter 3 Number :-- "))
+        var ans = greater(a,b,c)
+        document.write(`<h1>${ans} Is Max</h1>`)
+        document.write(`<h1>${hello} Is Max</h1>`)
+    </script>
+</body>
+</html>
