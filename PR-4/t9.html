@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //TNRN
+        // function angles()
+        // {
+        //     var ang1 = parseInt(prompt("Enter 1st Angle : --"))
+        //     var ang2 = parseInt(prompt("Enter 2st Angle : --"))
+        //     var ang3 = parseInt(prompt("Enter 3st Angle : --"))
+        //     var sum = ang1 + ang2+ ang3
+        //     if(sum==180)
+        //     {
+        //         document.write(`<h1>This Triangle Is Valid</h1>`)
+        //         document.write(`${ang1} + ${ang2} + ${ang3} = ${sum}`)
+        //     }
+        //     else{
+        //         document.write(`<h1>This Triangle Is Not Valid</h1>`) 
+        //         document.write(`${ang1} + ${ang2} + ${ang3} != ${sum}`)
+        //     }
+        // }
+        // angles()
+        
+        //TSRN
+        // function angles(ang1,ang2,ang3)
+        // {
+            
+        //     var sum = ang1 + ang2+ ang3
+        //     if(sum==180)
+        //     {
+        //         document.write(`<h1>This Triangle Is Valid</h1>`)
+        //         document.write(`${ang1} + ${ang2} + ${ang3} = ${sum}`)
+        //     }
+        //     else{
+        //         document.write(`<h1>This Triangle Is Not Valid</h1>`) 
+        //         document.write(`${ang1} + ${ang2} + ${ang3} != 180`)
+        //     }
+        // }
+        // var ang1 = parseInt(prompt("Enter 1st Angle : --"))
+        // var ang2 = parseInt(prompt("Enter 2st Angle : --"))
+        // var ang3 = parseInt(prompt("Enter 3st Angle : --"))
+        // angles(ang1,ang2,ang3)
+
+        //TNRS
+        // function angles()
+        // {
+        // var ang1 = parseInt(prompt("Enter 1st Angle : --"))
+        // var ang2 = parseInt(prompt("Enter 2st Angle : --"))
+        // var ang3 = parseInt(prompt("Enter 3st Angle : --"))
+            
+        //     var sum = ang1 + ang2+ ang3
+        //     if(sum==180)
+        //     {
+        //         document.write(`${ang1} + ${ang2} + ${ang3} = ${sum}`)
+        //         return 1 ;
+                
+        //     }
+        //     else{
+        //         document.write(`${ang1} + ${ang2} + ${ang3} != 180`)
+        //        return 0;
+               
+        //     }
+        // }
+       
+        // ans = angles()
+        // if(ans == 1)
+        // {
+        //     document.write(`<h1>This Triangle Is Valid</h1>`)
+           
+        // }
+        // else
+        // {
+        //     document.write(`<h1>This Triangle Is Not Valid</h1>`)
+             
+        // }
+
+        //TSRS
+        function angles(ang1,ang2,ang3)
+        {
+        
+            
+            var sum = ang1 + ang2+ ang3
+            if(sum==180)
+            {
+                document.write(`${ang1} + ${ang2} + ${ang3} = ${sum}`)
+                return 1 ;
+                
+            }
+            else{
+                document.write(`${ang1} + ${ang2} + ${ang3} != 180`)
+               return 0;
+               
+            }
+        }
+        var ang1 = parseInt(prompt("Enter 1st Angle : --"))
+        var ang2 = parseInt(prompt("Enter 2st Angle : --"))
+        var ang3 = parseInt(prompt("Enter 3st Angle : --"))
+        ans = angles(ang1,ang2,ang3)
+        if(ans == 1)
+        {
+            document.write(`<h1>This Triangle Is Valid</h1>`)
+           
+        }
+        else
+        {
+            document.write(`<h1>This Triangle Is Not Valid</h1>`)
+             
+        }
+    </script>
+</body>
+</html>

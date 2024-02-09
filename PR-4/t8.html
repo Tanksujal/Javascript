@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function cal()
+        {
+            var oprand = prompt("Enter Your Oprand Between +,-,*,/ : -- ")
+            var op1 = parseInt(prompt("Enter 1st Oprater : -- "))
+            var op2 = parseInt(prompt("Enter 2st Oprater : -- "))
+            switch(oprand)
+            {
+                case "+" : var ans = op1 + op2
+                     document.write(`Your Sum Is : -- ${op1} + ${op2} = ${ans}`)
+                     break;
+                case "-" : var ans = op1 - op2
+                     document.write(`Your Min Is : -- ${op1} - ${op2} = ${ans}`)
+                     break;
+                case "*" : var ans = op1 * op2
+                     document.write(`Your Mul Is : -- ${op1} * ${op2} = ${ans}`)
+                     break;
+                case "/" : var ans = op1 / op2
+                     document.write(`Your Div Is : -- ${op1} / ${op2} = ${ans}`)
+                     break;
+                default : document.write(`Invalid Choice`)
+            }
+        }
+        cal()
+    </script>
+</body>
+</html>
