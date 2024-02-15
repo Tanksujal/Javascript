@@ -1,0 +1,19 @@
+<script type="text/javascript">
+    var n = parseInt(prompt("Enter Array Size : -- "))
+    let array1 = [n]
+    for(i=0;i<n;i++)
+    {
+        array1[i] = parseInt(prompt("Enter Array Element : -- "))
+    }
+
+    let value = parseInt(prompt("Enter The Change Value : -- "))
+    let pos = parseInt(prompt("Enter The Position Between 1 To ${n} : -- "))
+
+    for(i=array1.length-1;i>=pos;i--)
+    {
+        array1[i+1] = array1[i]
+    }
+    array1[pos] = value
+
+    console.log(array1);
+</script>

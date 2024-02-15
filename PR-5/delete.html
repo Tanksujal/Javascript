@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    var n = parseInt(prompt("Enter Array Size : -- "))
+    let array1 = [n]
+    for(i=0;i<n;i++)
+    {
+        array1[i] = parseInt(prompt("Enter Array Element : -- "))
+    }
+
+    let value = parseInt(prompt("Enter The Delete Index: -- "))
+
+    for(i=value;i<array1.length-1;i++)
+    {
+        array1[i] = array1[i+1]
+    }
+ array1.length = array1.length-1
+
+    console.log(array1);
+</script>

@@ -1,0 +1,25 @@
+<script type="text/javascript">
+   var n =  parseInt(prompt("Enter Array Size :-- "))
+        const arr1 = [n]
+        for(var i=0;i<n;i++)
+        {
+            arr1[i] = parseInt(prompt("Enter Array Element : -- "))
+        }
+   let MaxNumber = arr1[0]
+
+   for(var i=0;i<n;i++)
+        {
+            if(arr1[i]>MaxNumber)
+            {
+                MaxNumber = arr1[i]
+            }
+        }
+// const arr2 = arr1.filter((a) => {
+//     if(a>MaxNumber)
+//     {
+//         MaxNumber = a
+//         return MaxNumber
+//     }
+// })
+console.log(MaxNumber);
+</script>
