@@ -1,0 +1,22 @@
+<script type="text/javascript">
+    var n = parseInt(prompt("Enter Array Size : -- "))
+    let array1 = [n]
+    temp = 0
+    for(i=0;i<n;i++)
+    {
+        array1[i] = parseInt(prompt("Enter Array Element : -- "))
+    }//54321
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(array1[i]>array1[j])
+            {
+                temp = array1[i]
+                array1[i] = array1[j]
+                array1[j] = temp
+            }
+        }
+    }
+    document.write(array1);
+</script>
