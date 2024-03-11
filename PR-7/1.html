@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    class person {
+        constructor(n, a, c) {
+            this.name = n;
+            this.age = a;
+            this.country = c;
+        }
+        getdata = () => {
+            console.log(`Your Name Is :-- ${this.name}`);
+            console.log(`Your Age Is :-- ${this.age}`);
+            console.log(`Your Country Is :-- ${this.country}`);
+        }
+    }
+    let length = parseInt(prompt("Enter Length : -- "));
+    for (let i = 0; i < length; i++) {
+        let name = prompt("Enter Name : -- ");
+        let age = parseInt(prompt("Enter Age : -- "));
+        let Country = prompt("Enter Country : -- ");
+        console.log(`------ -------`);
+        let obj = new person(name, age, Country);
+        obj.getdata();
+    }
+
+
+</script>
+

@@ -1,0 +1,57 @@
+<script type="text/javascript">
+    class BankAccount{
+        constructor(no,bal,p)
+        {
+            this.no = no;
+            this.bal = bal;
+            this.p = p;
+        }
+        getdata = () => {
+            console.log(`Ac No : -- ${this.no}`);
+            console.log(`Opening Balance : -- ${this.bal}`);
+        }
+        withdraw = (w) => {
+            let num = parseInt(prompt("Enter Your Correct Ac No for withdraw : -- "))
+            let pwd = prompt("Enter Your Correct Password : -- ");
+            if(num == this.no&&pwd == this.p)
+            {
+                if(this.bal>w)
+                {
+                    this.bal = this.bal - w;
+                    console.log(`Withdraw Succesfully: -- ${w}`);
+                    
+                }
+                else
+                {
+                    console.log(`Invalid Balance`);
+                }
+            }
+            else{
+                console.log(`Invalid Ac no,`);
+            }
+        }
+        deposit = (d) => {
+            let num = parseInt(prompt("Enter Your Correct Ac No for Deposit : -- "))
+            let pwd = prompt("Enter Your Correct Password : -- ");
+            if(num == this.no&&pwd == this.p)
+            { 
+                    this.bal = this.bal + d;
+                    console.log(`Deposit : -- ${d}`);
+            }
+            else{
+                console.log(`Invalid Ac no,and Password`);
+            }
+        }
+        BalanceCheck = () => {
+           console.log(`Balance Is : -- ${this.bal}`);
+        }
+        
+    }
+    let obj = new BankAccount(212121,15000,"s@123");
+    obj.getdata();
+    obj.withdraw(7000);
+    obj.deposit(6000);
+    obj.BalanceCheck();
+     obj.withdraw(16000);
+    obj.BalanceCheck();
+</script>
