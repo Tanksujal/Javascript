@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellpading=""id="chess">
+
+    </table>
+    <script type="text/javascript">
+        let chess = document.getElementById("chess");
+for(var i=1;i<=8;i++)
+{
+var tr = document.createElement("tr");
+if(i%2==0)
+{
+    for(var j=1;j<=8;j++)
+    {
+        var td = document.createElement("td")
+        if(j%2==0)
+        {
+            td.style.backgroundColor = "white"
+        }
+        else{
+            td.style.backgroundColor = "black"
+        }
+        td.style.width = "70px"
+        td.style.height = "70px"
+        tr.appendChild(td)
+        
+    }
+}
+else
+{
+    for(var j=1;j<=8;j++)
+    {
+        var td = document.createElement("td")
+        if(j%2==0)
+        {
+            td.style.backgroundColor = "black"
+        }
+        else{
+            td.style.backgroundColor = "white"
+        }
+        td.style.width = "70px"
+        td.style.height = "70px"
+        tr.appendChild(td)
+        
+    }
+}
+    
+    chess.appendChild(tr)
+    
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="display: flex;">
+      <tr >
+        <td>Name:-</td>
+        <td><input type="text"id="username"></td>
+        <td><span id="ername"></span></td>
+      </tr>
+       <tr>
+        <td><button onclick="add()">Submit</button></td>
+       </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td>Taskid</td>
+            <td>Taskname</td>
+            <td>action</td>
+        </tr>
+        <tbody id="task"></tbody>
+    </table>
+    <script type="text/javascript">
+        let record = [];
+        const view = () => {
+            let tbl = ""
+            record.map((val)=>{
+                return tbl+=`
+                  <tr>
+                    <td>${val.id}</td>  
+                    <td>${val.name}</td>  
+                    <td><button onclick="del(${val.id})">delete</button></td>  
+                  </tr>
+                `
+            })
+            document.getElementById(`task`).innerHTML = tbl;
+        }
+        const add = () => {
+            let id = Math.floor(Math.random()*1000000);
+            let name = document.getElementById(`username`).value;
+            if(!name)
+            {
+                document.getElementById(`ername`).innerHTML = "Task Is Required.."
+                return false;
+
+            }
+            let obj = {
+                id : id,
+                name : name,
+            }
+            record.push(obj);
+            view();
+            document.getElementById(`username`).innerHTML = "";
+        }
+        const del = (Id) => {
+           let deletedata = record.filter((val)=>{
+                return val.id != Id;
+            })
+            record = deletedata;
+            view();
+        }
+    </script>
+</body>
+</html>

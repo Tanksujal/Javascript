@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Name: - </td>
+            <td><input type="text"id="username"></td>
+            <td><span id="ername"></span></td>
+        </tr>
+        <tr>
+            <td>Email: - </td>
+            <td><input type="text"id="useremail"></td>
+            <td><span id="eremail"></span></td>
+        </tr>
+        <tr>
+            <td>Password: - </td>
+            <td><input type="text"id="userpwd"></td>
+            <td><span id="erpwd"></span></td>
+        </tr>
+        <tr>
+            <td>City: - </td>
+            <td><input type="text"id="usercity"></td>
+            <td><span id="ercity"></span></td>
+        </tr>
+        <tr>
+            
+            <td><input type="button"value="Submit"onclick="submit()"></td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        const submit = () => {
+            let name = document.getElementById(`username`).value;
+            let email = document.getElementById(`useremail`).value;
+            let password = document.getElementById(`userpwd`).value;
+            let city = document.getElementById(`usercity`).value;
+            if(!name)
+            {
+                document.getElementById(`ername`).innerHTML = "Name Is Required.."
+                
+            }
+            if(!email)
+            {
+                document.getElementById(`eremail`).innerHTML = "Email Is Required.."
+                
+            }
+            if(!password)
+            {
+                document.getElementById(`erpwd`).innerHTML = "Password Is Required.."
+                
+            }
+            if(!city)
+            {
+                document.getElementById(`ercity`).innerHTML = "City Is Required.."
+                
+            }
+            
+        }
+    </script>
+</body>
+</html>
